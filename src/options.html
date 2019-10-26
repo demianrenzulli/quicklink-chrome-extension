@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quicklink Chrome Extension - Configuration</title>
+    <style>
+        html {
+          font-size: 20px
+      }
+      
+      h3 {
+          color: #202020
+      }
+      
+      input {
+          font-size: 14px
+      }
+      
+      button {
+          background-color: #e7e7e7;
+          color: #000;
+          padding: 4px 10px;
+          margin: 4px;
+          text-align: center;
+          font-size: 14px;
+          border-radius: 3px
+      }
+      
+      ul {
+          margin-bottom: 20px;
+          margin-top: 20px
+      }
+      
+      .img-header {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 40%
+      }
+
+      .options-msg-container {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+      }
+      
+      .options-msg {
+          display: none;
+          color: green;
+          font-weight: 700;
+          font-size: 18px;
+          text-align: center;
+          vertical-align: middle;
+      }
+      
+      .field-label {
+          display: inline-block;
+          width: 200px;
+          text-align: right;
+          margin-right: 20px
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <a href="https://github.com/GoogleChromeLabs/quicklink-chrome-extension"><img class="img-header" src="/img/quicklink-extension-logo.png"></a>
+    <h2>Edit settings</h3>
+        <h4>Enable or disable tracking</h4>
+        <p>The extension senda analytics events to track usage of the options screen and the number of time Quicklink has been used in sites.</p>
+        <ul>
+            <li>
+                <span>Opt-out of Google Analytics</span>&nbsp;<input type="checkbox" id="opt-out-analytics">
+            </li>
+        </ul>
+        <h4>Ignore custom URL patterns</h4>
+        <p>By default, quiicklink will prefetch all in-viewport links. The following options allow you to tell Quicklink ignore <a href="https://github.com/GoogleChromeLabs/quicklink#custom-ignore-patterns">custom URL patterns.</a></p>
+        <p>Insert URL paths, protocols, file extensions and DOM elements to ignore, as a comma separated list of values (spaces are ignored).</p>
+        <div>
+            <label class="field-label">Ignore URL paths:</label>
+            <input type="text" id="ignore-url-paths" size="150">
+        </div>
+        <div>
+            <label class="field-label">Ignore URL protocols:</label>
+            <input type="text" id="ignore-url-protocols" size="150">
+        </div>
+        <div>
+            <label class="field-label">Ignore file extensions:</label>
+            <input type="text" id="ignore-file-extensions" size="150">
+        </div>
+        <div>
+            <label class="field-label">Ignore element attributes:</label>
+            <input type="text" id="ignore-element-attributes" size="150">
+        </div>
+        </br>
+        <div>
+            <button id="save-settings-btn">Save</button>
+            <button id="reset-settings-btn">Reset to defafults</button>
+        </div>
+        <div class="options-msg-container">
+            <p class="options-msg"></p>
+        </div>
+        <script src="helpers.js"></script>
+        <script src="options.js"></script>
+</body>
+
+</html>
