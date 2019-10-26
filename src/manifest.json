@@ -1,7 +1,7 @@
 {
     "name": "Quicklink Chrome Extension",
     "version": "1",
-    "description": "Injects Quicklink on sites to automatically prefetch in-viewport links during idle time",
+    "description": "Injects Quicklink on sites to automatically prefetch in-viewport links during idle time.",
     "permissions": ["storage"],
     "background":
     {
