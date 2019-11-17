@@ -43,6 +43,6 @@ The first option, allows to opt-out from Analytics, to stop sending tracking inf
 
 <img src="/disable_tracking.png">
 
-The second section lets updating the current [custom URL patterns](https://github.com/GoogleChromeLabs/quicklink#custom-ignore-patterns) to ignore and enter new ones:
+The second section allows to update the current [custom URL patterns](https://github.com/GoogleChromeLabs/quicklink#custom-ignore-patterns) to ignore and enter new ones:
 
 <img src="/edit_settings.png">
