@@ -1,6 +1,6 @@
 {
     "name": "Quicklink Chrome Extension",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Speed up navigations by automatically prefetching in-viewport links ⚡",
     "permissions": ["storage"],
     "background":
