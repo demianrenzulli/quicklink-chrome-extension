@@ -1,6 +1,6 @@
 {
 	"version" : 1,
-	"ignoreUrlPaths" : ["api", "logout", "signout", "exit", "quit", "login", "logoff", "subscribe", "subscription", "doubleclick", "bit.ly", "signin", "signup"],
+	"ignoreUrlPaths" : ["api", "logout", "signout", "exit", "quit", "login", "logoff", "subscribe", "subscription", "doubleclick", "bit.ly", "signin", "signup", "apk", "release"],
 	"ignoreFileExtensions" : [".zip", ".pdf", ".mp4"],
 	"ignoreUrlProtocols" : ["http:", "tel:", "mailto:", "javascript:", "market:"],
 	"ignoreElemAttributes" : ["noprefetch"],
