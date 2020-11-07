@@ -25,7 +25,9 @@ function initQuicklink(data) {
             uri => ignoreUrlPatterns.some(urlPattern => uri.toLowerCase().includes(urlPattern)),
             (uri, elem) => ignoreElemAttributes.some(elemAttr => elem.hasAttribute(elemAttr)),
             uri => uri.includes('#')
-        ]
+        ],
+        //limit to 5 elements per page
+        limit: 5
     });
 
     //send event to background script, for tracking purposes
